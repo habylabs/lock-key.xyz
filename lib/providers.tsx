@@ -20,8 +20,8 @@ export default function Providers({
     <DynamicContextProvider
       theme="auto"
       settings={{
-        environmentId: "2762a57b-faa4-41ce-9f16-abff9300e2c9",
-           walletConnectors: [EthereumWalletConnectors],
+        environmentId: process.env.DYNAMIC_ENVIRONMENT_ID as string,
+        walletConnectors: [EthereumWalletConnectors],
       }}
     >
       
